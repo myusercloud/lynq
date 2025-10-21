@@ -34,7 +34,7 @@ const Layout = ({ children }) => {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <Link to="/" className="flex items-center">
-              <h1 className="text-2xl font-bold text-primary-600">Nyota Sports</h1>
+              <h1 className="text-2xl font-bold text-black-600 ">Nyota Sports</h1>
             </Link>
 
             {/* Search Bar */}

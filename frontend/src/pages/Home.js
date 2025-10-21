@@ -17,20 +17,20 @@ const Home = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary-600 to-primary-800 text-white py-20">
+      <section className="bg-gradient-to-r from-black to-gray-900 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Welcome to Arena 254
+              Welcome to Nyota Sports
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-primary-100">
               Discover amazing products at unbeatable prices
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/products" className="bg-white text-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-                Shop Now
+                Products
               </Link>
-              <Link to="/products?category=electronics" className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary-600 transition-colors">
+              <Link to="/products?category=" className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary-600 transition-colors">
                 Jerseys
               </Link>
             </div>
@@ -44,11 +44,9 @@ const Home = () => {
           <h2 className="text-3xl font-bold text-center mb-12">Shop by Category</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { name: 'Boots', image: 'https://images.unsplash.com/photo-1498049794561-7780e7231661?w=300', link: '/products?category=electronics' },
-              { name: 'Jerseys', image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=300', link: '/products?category=clothing' },
-              { name: 'Balls', image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=300', link: '/products?category=home' },
-              { name: 'Trainers', image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300', link: '/products?category=sports' },
-            ].map((category) => (
+              { name: 'Boots', image: 'https://images.unsplash.com/photo-1498049794561-7780e7231661?w=300', link: '/products?category=jerseys' },
+              { name: 'Jerseys', image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=300', link: '/products?category=boots' },
+              ].map((category) => (
               <Link
                 key={category.name}
                 to={category.link}
@@ -132,13 +130,23 @@ const Home = () => {
               ))}
             </div>
           )}
+          <br></br>
+          <Link
+              to="/products"
+              className="flex items-center text-primary-800 hover:text-primary-1000 font-large"
+            >
+              View All Products
+              <ArrowRight size={20} className="ml-2" />
+          </Link>
         </div>
+        <br></br>
+        
       </section>
 
       {/* Features Section */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12">Why Choose Arena?</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Why Choose Nyota Sports?</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
