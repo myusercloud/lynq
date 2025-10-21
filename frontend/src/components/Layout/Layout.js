@@ -34,7 +34,7 @@ const Layout = ({ children }) => {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <Link to="/" className="flex items-center">
-              <h1 className="text-2xl font-bold text-primary-600">ShopEase</h1>
+              <h1 className="text-2xl font-bold text-primary-600">Nyota Sports</h1>
             </Link>
 
             {/* Search Bar */}
@@ -241,7 +241,7 @@ const Layout = ({ children }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-lg font-semibold mb-4">ShopEase</h3>
+              <h3 className="text-lg font-semibold mb-4">Nyota Sports</h3>
               <p className="text-gray-300">
                 Your one-stop destination for quality products at great prices.
               </p>
@@ -272,7 +272,7 @@ const Layout = ({ children }) => {
             </div>
           </div>
           <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
-            <p>&copy; 2024 ShopEase. All rights reserved.</p>
+            <p>&copy; 2025 Nyota Sports. All rights reserved.</p>
           </div>
         </div>
       </footer>

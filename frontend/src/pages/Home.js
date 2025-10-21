@@ -21,7 +21,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Welcome to ShopEase
+              Welcome to Arena 254
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-primary-100">
               Discover amazing products at unbeatable prices
@@ -31,7 +31,7 @@ const Home = () => {
                 Shop Now
               </Link>
               <Link to="/products?category=electronics" className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary-600 transition-colors">
-                Electronics
+                Jerseys
               </Link>
             </div>
           </div>
@@ -44,10 +44,10 @@ const Home = () => {
           <h2 className="text-3xl font-bold text-center mb-12">Shop by Category</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { name: 'Electronics', image: 'https://images.unsplash.com/photo-1498049794561-7780e7231661?w=300', link: '/products?category=electronics' },
-              { name: 'Clothing', image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=300', link: '/products?category=clothing' },
-              { name: 'Home', image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=300', link: '/products?category=home' },
-              { name: 'Sports', image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300', link: '/products?category=sports' },
+              { name: 'Boots', image: 'https://images.unsplash.com/photo-1498049794561-7780e7231661?w=300', link: '/products?category=electronics' },
+              { name: 'Jerseys', image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=300', link: '/products?category=clothing' },
+              { name: 'Balls', image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=300', link: '/products?category=home' },
+              { name: 'Trainers', image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300', link: '/products?category=sports' },
             ].map((category) => (
               <Link
                 key={category.name}
@@ -138,7 +138,7 @@ const Home = () => {
       {/* Features Section */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12">Why Choose ShopEase?</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Why Choose Arena?</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
